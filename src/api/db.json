@@ -1,0 +1,134 @@
+{
+  "users": [
+    {
+      "name": "Maria",
+      "lastName": "Martinez",
+      "email": "pepito.martinez@example.com",
+      "address": "Ruta Perdida 202",
+      "phone": "76654567",
+      "country": "Venezuela",
+      "id": "1"
+    },
+    {
+      "name": "Maria",
+      "lastName": "Martinez",
+      "email": "pepito.martinez@example.com",
+      "address": "Ruta Perdida 202",
+      "phone": "76654567",
+      "country": "Venezuela",
+      "id": "6"
+    },
+    {
+      "id": "3",
+      "name": "Pirulito",
+      "lastName": "Perez",
+      "email": "peruliti.perez@example.com",
+      "address": "Ruta Perdida 404",
+      "phone": "3334848484",
+      "country": "Argentina"
+    },
+    {
+      "id": "4",
+      "name": "Camilo",
+      "lastName": "Rengel",
+      "email": "camilo.rengel@example.com",
+      "address": "Ruta Perdida 434",
+      "phone": "3334848484",
+      "country": "Argentina"
+    },
+    {
+      "id": "12d6",
+      "name": "Shamela Sumati",
+      "lastName": "Chadee Burgos",
+      "email": "shamelart.ca@gmail.com",
+      "phone": "+5492617548707",
+      "country": "Argentina",
+      "address": "calle Padre Arce"
+    },
+    {
+      "id": "e246",
+      "name": "Shamela Sumati",
+      "lastName": "Chadee Burgos",
+      "email": "shamelart.ca@gmail.com",
+      "phone": "+5492617548707",
+      "country": "Argentina",
+      "address": "calle Padre Arce"
+    },
+    {
+      "id": "b389",
+      "name": "Jesus",
+      "lastName": "Colmenares",
+      "email": "colmena.jesus@gmail.com",
+      "phone": "+5492617548707",
+      "country": "Argentina",
+      "address": "calle Padre Arce"
+    }
+  ],
+  "transact": [
+    {
+      "name": "Jan",
+      "Expense": 4000,
+      "Income": 2400
+    },
+    {
+      "name": "Feb",
+      "Expense": 3000,
+      "Income": 1398
+    },
+    {
+      "name": "Mar",
+      "Expense": 2000,
+      "Income": 9800
+    },
+    {
+      "name": "Apr",
+      "Expense": 2780,
+      "Income": 3908
+    },
+    {
+      "name": "May",
+      "Expense": 1890,
+      "Income": 4800
+    },
+    {
+      "name": "Jun",
+      "Expense": 2390,
+      "Income": 3800
+    },
+    {
+      "name": "July",
+      "Expense": 3490,
+      "Income": 4300
+    },
+    {
+      "name": "Aug",
+      "Expense": 2000,
+      "Income": 9800
+    },
+    {
+      "name": "Sep",
+      "Expense": 2780,
+      "Income": 3908
+    },
+    {
+      "name": "Oct",
+      "Expense": 1890,
+      "Income": 4800
+    },
+    {
+      "name": "Nov",
+      "Expense": 2390,
+      "Income": 3800
+    },
+    {
+      "name": "Dec",
+      "Expense": 3490,
+      "Income": 4300
+    }
+  ],
+  "data": [
+    { "name": "Male", "value": 540 },
+    { "name": "Female", "value": 620 },
+    { "name": "Other", "value": 210 }    
+  ]  
+}

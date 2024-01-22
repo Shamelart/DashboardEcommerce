@@ -161,8 +161,7 @@ export default function Header() {
           </Transition>
         </Menu>
         <div>
-			<DarkMode />
-			
+			<DarkMode />		
 
         </div>
       </div>

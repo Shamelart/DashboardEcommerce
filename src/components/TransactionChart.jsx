@@ -1,69 +1,20 @@
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts'
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchChartData } from '../../transactionSlice'; // Asegúrate de que la ruta sea correcta
+import { selectChartData } from '../../transactionSlice'; // Asegúrate de que la ruta sea correcta
+import { useEffect } from 'react';
 
-const data = [
-	{
-		name: 'Jan',
-		Expense: 4000,
-		Income: 2400
-	},
-	{
-		name: 'Feb',
-		Expense: 3000,
-		Income: 1398
-	},
-	{
-		name: 'Mar',
-		Expense: 2000,
-		Income: 9800
-	},
-	{
-		name: 'Apr',
-		Expense: 2780,
-		Income: 3908
-	},
-	{
-		name: 'May',
-		Expense: 1890,
-		Income: 4800
-	},
-	{
-		name: 'Jun',
-		Expense: 2390,
-		Income: 3800
-	},
-	{
-		name: 'July',
-		Expense: 3490,
-		Income: 4300
-	},
-	{
-		name: 'Aug',
-		Expense: 2000,
-		Income: 9800
-	},
-	{
-		name: 'Sep',
-		Expense: 2780,
-		Income: 3908
-	},
-	{
-		name: 'Oct',
-		Expense: 1890,
-		Income: 4800
-	},
-	{
-		name: 'Nov',
-		Expense: 2390,
-		Income: 3800
-	},
-	{
-		name: 'Dec',
-		Expense: 3490,
-		Income: 4300
-	}
-]
 
 export default function TransactionChart() {
+	const dispatch = useDispatch();
+  
+	useEffect(() => {
+	dispatch(fetchChartData()); // Despacha la acción
+	}, [dispatch]);
+  
+	const barChart = useSelector(selectChartData);
+	console.log(barChart); // Imprime los datos seleccionados  
+
 	return (
 		<div className="h-[22rem] bg-white p-4 rounded-sm border border-gray-200 flex flex-col flex-1">
 			<strong className="text-gray-700 font-medium">Transactions</strong>
@@ -72,7 +23,7 @@ export default function TransactionChart() {
 					<BarChart
 						width={500}
 						height={300}
-						data={data}
+						data={barChart}
 						margin={{
 							top: 20,
 							right: 10,

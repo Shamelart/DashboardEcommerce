@@ -1,9 +1,8 @@
-import React from 'react'
-import DashboardStatsGrid from '../components/DashboardStatsGrid'
-import TransactionChart from '../components/TransactionChart'
-import RecentOrders from '../components/RecentOrders'
-import BuyerProfilePieChart from '../components/BuyerProfilePieChart'
-import PopularProducts from '../components/PopularProducts'
+import DashboardStatsGrid from '../components/DashboardStatsGrid';
+import TransactionChart from '../components/TransactionChart';
+import RecentOrders from '../components/RecentOrders';
+import BuyerProfilePieChart from '../components/BuyerProfilePieChart';
+import PopularProducts from '../components/PopularProducts';
 
 export default function Dashboard() {
 	return (
@@ -18,5 +17,5 @@ export default function Dashboard() {
 				<PopularProducts />
 			</div>
 		</div>
-	)
+	);
 }
