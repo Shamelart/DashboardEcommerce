@@ -7,7 +7,7 @@ export const fetchChartData = createAsyncThunk("chart/fetchChartData", async () 
     throw new Error(`HTTP error! status: ${response.status}`);
   }
   const data = await response.json();
- // console.log(data)
+  console.log(data)
   return data;
 });
 
@@ -21,7 +21,7 @@ const chartSlice = createSlice({
         state.loading = "loading";
       })
       .addCase(fetchChartData.fulfilled, (state, action) => {
-      //  console.log(action.payload);
+        console.log(action.payload);
         state.loading = "idle";
         state.data = action.payload;
       })

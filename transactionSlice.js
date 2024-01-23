@@ -7,7 +7,7 @@ export const fetchChartData = createAsyncThunk("chart/fetchChartData", async () 
     throw new Error(`HTTP error! status: ${response.status}`);
   }
   const bar = await response.json();
-  console.log('Datos recibidos de la API:', bar); // Imprime los datos recibidos
+ // console.log('Datos recibidos de la API:', bar); // Imprime los datos recibidos
   return bar; // Devuelve los datos recibidos
 });
 
@@ -25,7 +25,7 @@ const transactionSlice = createSlice({
         state.loading = "loading";
       })
       .addCase(fetchChartData.fulfilled, (state, action) => {
-        console.log('Datos almacenados en Redux:', action.payload); // Imprime los datos almacenados
+     //   console.log('Datos almacenados en Redux:', action.payload); // Imprime los datos almacenados
         state.loading = "idle";
         state.barChartData = action.payload;
       })

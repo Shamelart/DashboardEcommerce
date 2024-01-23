@@ -25,7 +25,7 @@ export default function BuyerProfilePieChart() {
 
 	useEffect(() => {
 		dispatch(fetchChartData());
-	}, [dispatch]);
+	}, []);
 
 	const chartData = useSelector(selectChartData);
 	//console.log(chartData)

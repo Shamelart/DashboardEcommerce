@@ -10,10 +10,13 @@ export default function TransactionChart() {
   
 	useEffect(() => {
 	dispatch(fetchChartData()); // Despacha la acción
-	}, [dispatch]);
+	}, []);
   
-	const barChart = useSelector(selectChartData);
-	console.log(barChart); // Imprime los datos seleccionados  
+	const barChart = useSelector(state => {
+	//	console.log(state);
+		return selectChartData(state);
+	});
+	console.log(JSON.parse(JSON.stringify(barChart))); // Imprime los datos seleccionados  
 
 	return (
 		<div className="h-[22rem] bg-white p-4 rounded-sm border border-gray-200 flex flex-col flex-1">
